@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* custom properties */
+
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'fraunces';
+
+    --fw-reg: 500;
+    --fw-bold: 700;
+
+    --fs-p: 12px;
+
+    --clr-Dark-cyan: hsl(158, 36%, 37%);
+    --clr-Cream: hsl(30, 38%, 92%);
+
+    --clr-Very-dark-blue: hsl(212, 21%, 14%);
+    --clr-Dark-grayish-blue: hsl(228, 12%, 48%);
+    --clr-White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-Cream);
+    font-size: var(--fs-p);
+    color: var(--clr-Very-dark-blue);
+    min-height: 100vh;
+}
+
+.perf {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 480px;
+    margin: 140px auto 0 auto;
+    background: var(--clr-White); 
+}
+
+.img {
+    width: 375px;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+    
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    font-weight: var(--fw-reg);
+    flex-direction: column;
+    margin: 22px;
+}
+
+
+.category {
+    text-transform: uppercase;
+    color: var(--clr-Dark-grayish-blue);
+    letter-spacing: 2px;
+
+}
+
+
+h1 {
+    font-family: var(--ff-secondary);
+    font-size: 31px;
+    color: var(--clr-Very-dark-blue);
+}
+
+p {
+padding-bottom: 10px;
+font-size: 10px;
+color: var(--clr-Dark-grayish-blue);
+margin-top: 5px;
+line-height: 15px;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.list {
+    display: inline-block;
+    color: var(--clr-Dark-cyan);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cost {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: line-through;
+    color: var(--clr-Dark-grayish-blue);
+    font-size: 10px;
+}
+
+button {
+    color: var(--clr-White);
+    font-family: var(--ff-primary);
+    background-color:var(--clr-Dark-cyan);
+    font-weight: bold;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--clr-Very-dark-blue);
+}
+.icon{
+    margin-right: 7px;
+}
